@@ -20,7 +20,8 @@ const WalletContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
     const { autoConnect } = useAutoConnect();
     const { networkConfiguration } = useNetworkConfiguration();
     const network = networkConfiguration as WalletAdapterNetwork;
-    const endpoint = useMemo(() => clusterApiUrl(network), [network]);
+ const endpoint = 'https://convincing-wiser-sponge.solana-mainnet.quiknode.pro/08e47135ea457ea8e50d350eb86f9b69bd43e227/';
+
 
     console.log(network);
 

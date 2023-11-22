@@ -1,18 +1,19 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { HomeView } from "../views";
+import { BasicsView, HomeView } from "../views";
 
 const Home: NextPage = (props) => {
   return (
     <div>
-      <Head>
+      {/* <Head>
         <title>Solana Scaffold</title>
         <meta
           name="description"
           content="Solana Scaffold"
         />
       </Head>
-      <HomeView />
+      <HomeView /> */}
+      <BasicsView/>
     </div>
   );
 };

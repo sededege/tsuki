@@ -13,16 +13,16 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
     return (
         <>
           <Head>
-            <title>Solana Scaffold Lite</title>
+            <title>Tsuki Raffler</title>
           </Head>
 
           <ContextProvider>
-            <div className="flex flex-col h-screen">
+            <div className="flex flex-col h-[100vh] w-full items-center justify-center ">
               <Notifications />
-              <AppBar/>
-              <ContentContainer>
+          {/*      <AppBar/>  */}
+              <ContentContainer >
                 <Component {...pageProps} />
-                <Footer/>
+              {/*   <Footer/> */}
               </ContentContainer>
             </div>
           </ContextProvider>
